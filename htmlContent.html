@@ -1,0 +1,322 @@
+<!-- FILTRO DE BUSQUEDA -->
+<fieldset>
+  <!-- FILA Nº 1 -->
+  <ul class="ancho100">
+    <!-- Organización Contratante -->
+    <li class="inlinebloque ancho15">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_nombreOC"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:idRutaNodo"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:etiquetatipo"
+          class="tipo3con05Margen"
+          title="Organización Contratante"
+          >Organización Contratante</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <input
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:idRutaNodo"
+        type="text"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:idRutaNodo"
+        class="anchoSelect284"
+        alt=""
+        title=""
+        disabled="disabled"
+      />
+      <script type="text/javascript" language="Javascript">
+        function dpf(f) {
+          var adp = f.adp;
+          if (adp != null) {
+            for (var i = 0; i < adp.length; i++) {
+              f.removeChild(adp[i]);
+            }
+          }
+        }
+        function apf(f, pvp) {
+          var adp = new Array();
+          f.adp = adp;
+          var i = 0;
+          for (k in pvp) {
+            var p = document.createElement("input");
+            p.type = "hidden";
+            p.name = k;
+            p.value = pvp[k];
+            f.appendChild(p);
+            adp[i++] = p;
+          }
+        }
+        function jsfcljs(f, pvp, t) {
+          apf(f, pvp);
+          var ft = f.target;
+          if (t) {
+            f.target = t;
+          }
+          f.submit();
+          f.target = ft;
+          dpf(f);
+        }
+      </script>
+      <a
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:linkSeleccionarOC"
+        href="#"
+        onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles'],{'viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:linkSeleccionarOC':'viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:linkSeleccionarOC'},'');}return false"
+        class="outputLinkEx"
+        ><span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:idSeleccionarOCLink"
+          class="outputText"
+          >Seleccionar</span
+        ></a
+      >
+    </li>
+    <li class="ancho15 inlinebloque">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_etiquetactivo"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:comboactivo"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:etiquetactivo"
+          class="tipo3con05Margen"
+          title="Activo"
+          >Activo</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <select
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:comboactivo"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:comboactivo"
+        class="selectOneMenu width29em"
+        size="1"
+        title="Activo"
+      >
+        <option value="01" selected="selected">Activos</option>
+        <option value="02">Inactivos</option>
+        <option value="00">-- Todos --</option>
+      </select>
+    </li>
+  </ul>
+
+  <!-- FILA Nº 2 -->
+  <ul class="ancho100">
+    <!-- Nombre del Órgano de Contratación -->
+    <li class="inlinebloque ancho15">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_etiquetorgano"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:texoorgano"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:etiquetorgano"
+          class="tipo3con05Margen"
+          title="Nombre O. Contratación"
+          >Nombre O. Contratación</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <input
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:texoorgano"
+        type="text"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:texoorgano"
+        class="width28punto6em"
+        alt="Nombre O. Contratación"
+        maxlength="250"
+        onchange="cambiarOC();"
+        title="Nombre O. Contratación"
+      />
+    </li>
+    <!-- Comunidad autonoma del OC -->
+    <li class="inlinebloque ancho15">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_text12ComunidadMAQ"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:menu111MAQ"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:text12ComunidadMAQ"
+          class="tipo3con05Margen"
+          title="Comunidad Autónoma OC"
+          >Comunidad Autónoma OC</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <select
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:menu111MAQ"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:menu111MAQ"
+        class="selectOneMenu width29em"
+        size="1"
+        onchange="submit();"
+      >
+        <option value="00" selected="selected">-- Todos --</option>
+        <option value="01">Andalucía</option>
+        <option value="02">Aragón</option>
+        <option value="03">Asturias (Principado de)</option>
+        <option value="04">Balears (Illes)</option>
+        <option value="05">Canarias</option>
+        <option value="06">Cantabria</option>
+        <option value="07">Castilla y León</option>
+        <option value="08">Castilla-La Mancha</option>
+        <option value="09">Cataluña</option>
+        <option value="10">Ceuta</option>
+        <option value="11">Comunitat Valenciana</option>
+        <option value="12">Extremadura</option>
+        <option value="13">Galicia</option>
+        <option value="14">Madrid (Comunidad de)</option>
+        <option value="15">Melilla</option>
+        <option value="16">Murcia (Región de)</option>
+        <option value="17">Navarra (Comunidad Foral de)</option>
+        <option value="18">País Vasco</option>
+        <option value="19">Rioja (La)</option>
+      </select>
+    </li>
+  </ul>
+
+  <!-- FILA Nº 3 -->
+  <ul class="ancho100">
+    <!-- Nat. Jurídica -->
+    <li class="inlinebloque ancho15">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_natJuridica"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:naturalezaJuridicaCombo"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:etiquetNatJuridica"
+          class="tipo3con05Margen"
+          title="Naturaleza Jurídica"
+          >Naturaleza Jurídica</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <select
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:naturalezaJuridicaCombo"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:naturalezaJuridicaCombo"
+        class="selectOneMenu width29em"
+        size="1"
+        title="Naturaleza Juridica"
+      >
+        <option value="0"></option>
+        <option value="1">ADMINISTRACIÓN GENERAL DEL ESTADO</option>
+        <option value="2">ADMINISTRACIÓN DE COMUNIDAD AUTÓNOMA</option>
+        <option value="3">CIUDAD AUTÓNOMA</option>
+        <option value="4">AYUNTAMIENTO</option>
+        <option value="5">DIPUTACIÓN PROVINCIAL</option>
+        <option value="6">CABILDO O CONSELL INSULAR</option>
+        <option value="7">COMARCA</option>
+        <option value="8">MANCOMUNIDAD</option>
+        <option value="9">AGRUPACIÓN DE MUNICIPIOS</option>
+        <option value="10">ÁREA METROPOLITANA</option>
+        <option value="11">ENTIDAD LOCAL MENOR</option>
+        <option value="12">
+          ENTIDADES GESTORAS Y SERVICIOS COMUNES DE LA SEGURIDAD
+        </option>
+        <option value="13">ORGANISMO AUTÓNOMO</option>
+        <option value="14">ENTIDAD PÚBLICA EMPRESARIAL</option>
+        <option value="15">UNIVERSIDAD PÚBLICA</option>
+        <option value="16">AGENCIA</option>
+        <option value="17">OTRAS ENTIDADES DE DERECHO PÚBLICO</option>
+        <option value="18">SOCIEDAD MERCANTIL</option>
+        <option value="19">CONSORCIO</option>
+        <option value="20">FUNDACIÓN</option>
+        <option value="21">
+          MUTUA DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES DE LA
+          SEGURIDAD SOCIAL
+        </option>
+        <option value="22">ENTE PÚBLICO</option>
+        <option value="23">ORGANISMO PÚBLICO DE INVESTIGACIÓN</option>
+        <option value="24">INSTITUCIÓN INDEPENDIENTE</option>
+        <option value="25">OTRA INSTITUCIÓN SIN ÁNIMO DE LUCRO</option>
+        <option value="26">OTROS</option></select
+      ><br />
+    </li>
+    <!-- Provincia del OC -->
+    <li class="ancho15 inlinebloque">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_text12ProvinciaMAQ"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:menuProvinciaMAQ"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:text12ProvinciaMAQ"
+          class="tipo3con05Margen"
+          title="Provincia del OC"
+          >Provincia del OC</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <select
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:menuProvinciaMAQ"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:menuProvinciaMAQ"
+        class="selectOneMenu width29em"
+        size="1"
+      >
+        <option value="00">-- Todos --</option>
+        <option value=""></option>
+      </select>
+    </li>
+  </ul>
+
+  <!-- FILA Nº 4 -->
+
+  <ul class="ancho100">
+    <li class="inlinebloque ancho15"></li>
+    <li class="inlinebloque width30em"></li>
+    <!-- Localidad del OC -->
+    <li class="inlinebloque ancho15">
+      <label
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:label_etiquetaLocalidad"
+        for="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:textoLocalidad"
+      >
+        <span
+          id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:etiquetaLocalidad"
+          class="tipo3con05Margen"
+          title="Localidad"
+          >Localidad</span
+        ></label
+      >
+    </li>
+    <li class="inlinebloque width30em">
+      <input
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:textoLocalidad"
+        type="text"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:textoLocalidad"
+        class="selectOneMenu width29em"
+        alt="Localidad"
+        maxlength="250"
+        title="Localidad"
+      />
+    </li>
+  </ul>
+</fieldset>
+
+<!-- Botonera -->
+<fieldset class="margintop1punto5">
+  <legend class="ancho15 oculto">
+    Botonera de acciones para el formulario de búsqueda del perfil del
+    contratante
+  </legend>
+
+  <ul class="ancho100">
+    <li class="inlinebloque"><div class="oculto">&nbsp;</div></li>
+    <li class="inlinebloque width30em">
+      <input
+        type="submit"
+        value="Buscar "
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:botonbuscar"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:botonbuscar"
+        class="aceptar commandExButton"
+        alt="Buscar "
+        title="Buscar "
+      /><input
+        type="submit"
+        value="Limpiar"
+        id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:button2todas"
+        name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:listaperfiles:button2todas"
+        class="cancelar commandExButton marginLeft1em"
+        title="Limpiar"
+      />
+    </li>
+  </ul>
+</fieldset>

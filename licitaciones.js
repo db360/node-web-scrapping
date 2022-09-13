@@ -60,55 +60,35 @@ const fs = require('fs/promises');
     })
     console.log(theadData)
     // EXPEDIENTES DATA
-    await page.waitForSelector('table tbody tr td')
     const tdExpedienteData = await page.evaluate(() => {
       const expediente = Array.from(document.querySelectorAll('table tbody tr .tdExpediente'))
       return expediente.map(td => td.innerText)
     })
-    console.log(tdExpedienteData, tdExpedienteData.length)
     // TIPO DATA
-    await page.waitForSelector('table tbody tr td')
     const tdTipoData = await page.evaluate(() => {
       const tipo = Array.from(document.querySelectorAll('table tbody tr .tdTipoContrato'))
       return tipo.map(td => td.innerText)
     })
-    console.log(tdTipoData, tdTipoData.length)
     // OBJETIVO CONTRATO DATA
-    await page.waitForSelector('table tbody tr td')
     const tdContratoData = await page.evaluate(() => {
       const contrato = Array.from(document.querySelectorAll('table tbody tr .tdTipoContratoLicOC'))
       return contrato.map(td => td.innerText)
     })
-    console.log(tdContratoData, tdContratoData.length)
     // ESTADO DATA
-    await page.waitForSelector('table tbody tr td')
     const tdEstadoData = await page.evaluate(() => {
       const estado = Array.from(document.querySelectorAll('table tbody tr .tdEstado'))
       return estado.map(td => td.innerText)
     })
-    console.log(tdEstadoData, tdEstadoData.length)
     // ESTADO DATA
-    await page.waitForSelector('table tbody tr td')
     const tdFechaData = await page.evaluate(() => {
       const fecha = Array.from(document.querySelectorAll('table tbody tr .tdFecha'))
       return fecha.map(td => td.innerText)
     })
+    console.log(tdExpedienteData, tdExpedienteData.length)
+    console.log(tdTipoData, tdTipoData.length)
+    console.log(tdContratoData, tdContratoData.length)
+    console.log(tdEstadoData, tdEstadoData.length)
     console.log(tdFechaData, tdEstadoData.length)
-    // const data = await page.evaluate(() => {
-    //   const tds = Array.from(document.querySelectorAll('table tbody tr td'))
-    //   console.log(tds)
-    //   return tds.map(td => td.innerText)
-    // })
-    // console.log(JSON.stringify({ data }))
-    // // GET HTML
-    // await fs.writeFile('./htmlContent.html', data)
-    // console.log(data)
-
-    // const tableSelector = '#tableLicitacionesPerfilContratante'
-    // scrapTable(url, tableSelector)
-    // const title = await page.$eval('#anchoMinimoPLACE', element => element.innerHTML)
-
-    // console.log(parsedcookies)
   } catch (error) {
     console.log(error)
   }

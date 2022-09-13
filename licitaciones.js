@@ -36,7 +36,7 @@ const fs = require('fs/promises');
       result.iterateNext().click()
     })
     // Click en el boton de "Junta de Gobierno del Ayuntamiento de Marbella".
-    const contratosLinkSelector = 'table tbody tr:nth-child(1) a '
+    const contratosLinkSelector = 'table tbody tr:nth-child(2) a '
     await page.waitForSelector(contratosLinkSelector)
     await page.click(contratosLinkSelector)
 
@@ -51,13 +51,55 @@ const fs = require('fs/promises');
     await page.waitForSelector('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]')
     await page.click('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]')
 
-    // Table SELECTOR
-    await page.waitForSelector('table tr td')
-    const data = await page.evaluate(() => {
-      const tds = Array.from(document.querySelectorAll('table tr td'))
-      return tds.map(td => td.innerText)
+    // Table SELECTORS
+    // Table HEAD DATA
+    await page.waitForSelector('table tbody tr td')
+    const theadData = await page.evaluate(() => {
+      const thead = Array.from(document.querySelectorAll('table thead tr th'))
+      return thead.map(td => td.innerText)
     })
-    console.log(JSON.stringify(data))
+    console.log(theadData)
+    // EXPEDIENTES DATA
+    await page.waitForSelector('table tbody tr td')
+    const tdExpedienteData = await page.evaluate(() => {
+      const expediente = Array.from(document.querySelectorAll('table tbody tr .tdExpediente'))
+      return expediente.map(td => td.innerText)
+    })
+    console.log(tdExpedienteData, tdExpedienteData.length)
+    // TIPO DATA
+    await page.waitForSelector('table tbody tr td')
+    const tdTipoData = await page.evaluate(() => {
+      const tipo = Array.from(document.querySelectorAll('table tbody tr .tdTipoContrato'))
+      return tipo.map(td => td.innerText)
+    })
+    console.log(tdTipoData, tdTipoData.length)
+    // OBJETIVO CONTRATO DATA
+    await page.waitForSelector('table tbody tr td')
+    const tdContratoData = await page.evaluate(() => {
+      const contrato = Array.from(document.querySelectorAll('table tbody tr .tdTipoContratoLicOC'))
+      return contrato.map(td => td.innerText)
+    })
+    console.log(tdContratoData, tdContratoData.length)
+    // ESTADO DATA
+    await page.waitForSelector('table tbody tr td')
+    const tdEstadoData = await page.evaluate(() => {
+      const estado = Array.from(document.querySelectorAll('table tbody tr .tdEstado'))
+      return estado.map(td => td.innerText)
+    })
+    console.log(tdEstadoData, tdEstadoData.length)
+    // ESTADO DATA
+    await page.waitForSelector('table tbody tr td')
+    const tdFechaData = await page.evaluate(() => {
+      const fecha = Array.from(document.querySelectorAll('table tbody tr .tdFecha'))
+      return fecha.map(td => td.innerText)
+    })
+    console.log(tdFechaData, tdEstadoData.length)
+    // const data = await page.evaluate(() => {
+    //   const tds = Array.from(document.querySelectorAll('table tbody tr td'))
+    //   console.log(tds)
+    //   return tds.map(td => td.innerText)
+    // })
+    // console.log(JSON.stringify({ data }))
     // // GET HTML
     // await fs.writeFile('./htmlContent.html', data)
     // console.log(data)

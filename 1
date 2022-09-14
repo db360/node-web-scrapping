@@ -6,3 +6,5 @@ cuando estamos en la ultima pagina, no hay link siguiente+
     // const enParser = Globalize('es').numberParser()
     // importeParsed = enParser(importeContrato) || ''
     // console.log({ name, tipoContrato, objContrato, estadoContrato, importeParsed, fechaContrato })
+
+    .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'_').replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'_')

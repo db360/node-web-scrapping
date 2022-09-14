@@ -25,7 +25,7 @@ Globalize.loadTimeZone(require('iana-tz-data'));
   // Pagina Perfil Contratante
   await page.goto(
     url,
-    { waitUntil: 'load', timeout: 0, slowMo: 250 }
+    { waitUntil: 'load', timeout: 0, slowMo: 500 }
   )
   // await page.screenshot({ path: 'screenshot.png' })
   // Insertar Valor 'Marbella' y Click en buscar
@@ -60,7 +60,7 @@ Globalize.loadTimeZone(require('iana-tz-data'));
   let isBtnDisabled = false
   while (!isBtnDisabled) {
     await page.waitForSelector('#tableLicitacionesPerfilContratante tbody')
-    const contractsHandles = await page.$$('#tableLicitacionesPerfilContratante tbody tr')
+    const contractsHandles = await page.$$('#tableLicitacionesPerfilContratante tbody')
     // loop through handkers
     const contratos = []
     for (const contractHandles of contractsHandles) {
@@ -79,7 +79,7 @@ Globalize.loadTimeZone(require('iana-tz-data'));
         tipoContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdTipoContrato').innerText, contractHandles)
       } catch (error) { console.log(error, 'Contrato Error') }
       try {
-        objContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdTipoContratoLicOC').innerText, contractHandles)
+        objContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdTipoContratoLicOC').innerText.replace(/[&/\\#,+()$~%.'":*?<>{}]/g, ''), contractHandles)
       } catch (error) { console.log(error, 'Objetivo Contrato Error') }
       try {
         estadoContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdEstado').innerText, contractHandles)
@@ -88,14 +88,18 @@ Globalize.loadTimeZone(require('iana-tz-data'));
         importeContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdImporte').innerText, contractHandles)
       } catch (error) { console.log(error, 'Importe Error') }
       try {
-        fechaContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdFecha').innerText, contractHandles)
+        fechaContrato = await page.evaluate(el => el.querySelector('#tableLicitacionesPerfilContratante tbody tr .tdFecha').innerText.replace(/[\n\r]/g, ' '), contractHandles)
       } catch (error) { console.log(error, 'Fecha Error') }
       if (name !== 'Null') {
         contratos.push({ name, tipoContrato, objContrato, estadoContrato, importeContrato, fechaContrato })
-        fs.writeFile('results.json', JSON.stringify(contratos), function (err) {
-          if (err) throw err
-          console.log('The "data to append" was appended to file!')
-        })
+        fs.appendFile('results.json', JSON.stringify(contratos), 'utf8', () => console.log('File Writed Successfully'))
+        // fs.appendFile(
+        //   'results.csv',
+        //   `${name.replace(/\\n/g, ' ')},${tipoContrato},${objContrato.replace(/\\n/g, ' ')},${estadoContrato},${importeContrato},${fechaContrato.replace(/\\n/g, ' ')}\n`,
+        //   function (err) {
+        //     if (err) throw err
+        //   }
+        // )
       }
     }
     await page.waitForSelector('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:siguienteLink"]', { visible: true })

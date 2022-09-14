@@ -1,82 +1,1045 @@
 [
     {
+        "name": "SE 290/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio por cuenta abierta para traducciones de textos a varios idiomas para la Delegación de Turismo del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Publicada",
+        "importeContrato": "1.652,89",
+        "fechaContrato": "Present. Oferta:27/09/2022"
+    }
+,
+    {
+        "name": "SE 12/23",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de dirección facultativa _dirección de obra_ dirección de ejecución y coordinación de seguridad y salud_ para las obras de rehabilitación del edificio _Antigua escuela oficial de idiomas_ sito en Travesía Huerta los Cristales nº 7_ para uso residencial en regimen de vivienda protegida T_M_ Marbella _Málaga_",
+        "estadoContrato": "Publicada",
+        "importeContrato": "29.917,36",
+        "fechaContrato": "Present. Oferta:21/09/2022"
+    }
+,
+    {
+        "name": "SU 285/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de material diverso de cerrajería para los Servicios Operativos de Nueva Andalucía_ Marbella y Las Chapas durante el año 2022 y 2023_",
+        "estadoContrato": "Evaluación",
+        "importeContrato": "20.661,16",
+        "fechaContrato": "Present. Oferta:13/09/2022"
+    }
+,
+    {
+        "name": "D SE 225/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio para el uso de la marca Q de Calidad y S de Sostenibilidad otorgada por el Instituto para la Calidad Turística Española a las playas y senderos del término municipal de Marbella",
+        "estadoContrato": "Evaluación",
+        "importeContrato": "8.516,95",
+        "fechaContrato": "Present. Oferta:16/08/2022"
+    }
+,
+    {
+        "name": "SE 221/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Contratación del Servicio de Catering con motivo de la Festividad de la Agrupación de Voluntarios de Protección Civil de Marbella durante los años 2022 y 2023",
+        "estadoContrato": "Evaluación",
+        "importeContrato": "16.363,64",
+        "fechaContrato": "Present. Oferta:11/08/2022"
+    }
+,
+    {
+        "name": "SE 133/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de reparaciones de mecánica_ mantenimiento y suministro de repuestos de los vehículos autobuses utilizados para el transporte en el Excmo_ Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "62.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:11/08/2022"
+    }
+,
+    {
+        "name": "SU 153/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de vestuario para el personal del Servicio de Prevención_ Extinción de Incendios y Salvamentos del Ecxmo_ Ayuntamiento de Marbella para el ejercicio 2022_",
+        "estadoContrato": "Evaluación",
+        "importeContrato": "98.974,25",
+        "fechaContrato": "Present. Oferta:07/07/2022"
+    }
+,
+    {
+        "name": "PAT 232/22",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Autorización de uso común especial sobre los terrenos destinados a la instalación de las Atracciones Mecánicas y actividades feriales con motivo de la Feria y Fiestas de San Bernabé a celebrar del 7 al 12 de junio de 2022_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "1.319,01",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:08/06/2022 Formalización:15/06/2022"
+    }
+,
+    {
+        "name": "PAT 219/22",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Bases reguladoras de la autorización para la instalación y uso de barras de la Feria y Fiestas de San Bernabé 2022_",
+        "estadoContrato": "Parcialmente Resuelta",
+        "importeContrato": "8.920,80",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:03/06/2022"
+    }
+,
+    {
+        "name": "CP 206/22",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación del patrocinio publicitario para la promoción turística de Marbella mediante la difusión del logo turístico del Ayuntamiento de Marbella y otras acciones de celebración del evento _The One Race to Marbella_ en el País Vasco 2022",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "20.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:31/05/2022 Formalización:08/06/2022"
+    }
+,
+    {
+        "name": "SE 171/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Prestación de servicios docentes para impartir y ejecutar las acciones formativas y deportivas del _Programa de prevención_ ocio y gestión del tiempo libre” para el año 2022",
+        "estadoContrato": "Parcialmente Resuelta",
+        "importeContrato": "54.733,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:01/09/2022"
+    }
+,
+    {
+        "name": "SU 121/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del Suministro por cuenta abierta de Material de Señalización de Tráfico para los Servicios Operativos de la Delegación Municipal de Tráfico",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "58.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:19/07/2022 Formalización:06/09/2022"
+    }
+,
+    {
+        "name": "CP 157/22",
+        "tipoContrato": "Privado",
+        "objContrato": "Gestión y producción de las actuaciones artísticas en el _Festival Polivalente 2022_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.736,20",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:11/05/2022 Formalización:22/06/2022"
+    }
+,
+    {
+        "name": "SE 131/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de dirección arqueológica de la obra de _Rehabilitación del Trapiche del Prado_ antiguo complejo preindustrial de la caña de azúcar_ para centro de interpretación T_M_ Marbella _Málaga_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "50.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:22/07/2022 Formalización:06/09/2022"
+    }
+,
+    {
+        "name": "DSU 34/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por cuenta abierta de material vegetal y de vivero para la Delegación de Parques y Jardines_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "462.727,27",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/06/2022"
+    }
+,
+    {
+        "name": "SE 107/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio por cuenta abierta de guías turísticos oficiales para la realización de visitas turísticas guiadas de la Delegación de Turismo del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "5.785,12",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/04/2022 Formalización:29/06/2022"
+    }
+,
+    {
+        "name": "SE 115/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio para el montaje e instalación de stands y carpas para la _IV Feria de empresas y empleo de Marbella 2022_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "24.500,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:14/03/2022 Formalización:23/03/2022"
+    }
+,
+    {
+        "name": "PAT 83/22",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Concesión consistente en la instalación_ explotación y aprovechamiento de siete lotes de masajes ubicados en las playas del termino municipal de Marbella_",
+        "estadoContrato": "Parcialmente Resuelta",
+        "importeContrato": "55.944,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:09/08/2022 Formalización:06/09/2022"
+    }
+,
+    {
+        "name": "D BPAT 26/21",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Enajenación de las viviendas letras A y B_ planta primera_ portal 7_ edificio 2_ del Conjunto Residencial _Jardines del Príncipe__ sito en Avda_ Jaime de Mora y Aragón 16_ Marbella_ anotado en el Inventario de Bienes Municipales con el numero 1_625 y 1_626_ naturaleza patrimonial_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "897.309,76",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/04/2022 Formalización:15/07/2022"
+    }
+,
+    {
+        "name": "CP 56/22",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación del Patrocinio para la Promoción de la Ciudad Mediante la Difusión de la Imagen del Logo _Marca Marbella Junior_ a través de los Equipos de Cantera del Marbella Rugby Club en las competiciones Deportivas Federadas en las que participen durante el periodo comprendido entre los años 2022-2023",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "17.035,12",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:11/03/2022"
+    }
+,
+    {
+        "name": "SU 20/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por cuenta abierta de material diverso de pintura para los servicios operativos de San Pedro Alcántara_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "12.396,69",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:18/03/2022 Formalización:06/04/2022"
+    }
+,
+    {
+        "name": "CAE 94/22",
+        "tipoContrato": "Administrativo especial",
+        "objContrato": "Contratación de la Explotación de la Peluquería del Centro de Participación Activa para Personas Mayores _Nueva Andalucía_ de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "5.132,40",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:14/01/2022"
+    }
+,
+    {
+        "name": "SU 290/21",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación de los elementos necesarios para la Celebración del Espacio Mágico de Navidad y su Organización en Marbella Centro_ Plaza del Mercado Municipal y Paseo de la Alameda con motivo de la Navidad_Reyes Marbella 2021_2022",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "59.564,30",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:23/12/2021 Formalización:28/12/2021"
+    }
+,
+    {
+        "name": "SE 67/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de diseño_ construcción en régimen de alquiler_ montaje_ desmontaje_ transporte_ almacenaje_ mantenimiento_ reserva de espacio y servicios complementarios para el stand de Marbella en la 42º edición de la Feria Turística FITUR 2022_ a celebrar en Madrid del 19 al 23 de enero 2022_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "97.148,05",
+        "fechaContrato": "Publicación PLACSP: Desistimiento:12/01/2022"
+    }
+,
+    {
+        "name": "OB 84/22",
+        "tipoContrato": "Obras",
+        "objContrato": "Contratación de las obras Centro Polivalente de usos Múltiples de Nueva Andalucía_ T_M_ Marbella _Málaga_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "1.799.096,26",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:18/05/2022 Formalización:08/06/2022"
+    }
+,
+    {
+        "name": "SE 2/22",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de auditoria y certificación según la norma en ISO 9001_2015 del laboratorio municipal del Excmo_ Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "3.500,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/03/2022 Formalización:23/03/2022"
+    }
+,
+    {
+        "name": "SU 8/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por cuenta abierta de material de ferretería para la unidad de instalaciones del Ayto_ de Marbella_",
+        "estadoContrato": "Adjudicada",
+        "importeContrato": "33.057,87",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:22/08/2022"
+    }
+,
+    {
+        "name": "SE 264/21",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de coordinación de seguridad y salud en fase de ejecución de la obra del Pabellón Deportivo en el sector URP-SP-10 San Pedro Alcántara T_M_ de Marbella _Málaga_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "19.769,52",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:07/12/2021 Formalización:28/12/2021"
+    }
+,
+    {
+        "name": "CP 232/21",
+        "tipoContrato": "Privado",
+        "objContrato": "Patrocinio publicitario para la promoción de la ciudad mediante la difusión de la imagen del logo _Marca Marbella Junior_ a través de los equipos de cantera de la entidad _Club deportivo Peña Los Compadres_ en la competiciones deportivas federadas en las que participen durante el periodo comprendido entre los años 2021-2023_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "11.983,47",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:29/11/2021 Formalización:01/12/2021"
+    }
+,
+    {
+        "name": "SU 7/22",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación por lotes del Suministro Eléctrico para las Instalaciones del Excmo_ Ayuntamiento de Marbella",
+        "estadoContrato": "Adjudicada",
+        "importeContrato": "3.000.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/12/2021"
+    }
+,
+    {
+        "name": "SE 245/21",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de dirección facultativa de las obras de remodelación y mejora de infraestructuras en las calles Nuestra señora de Gracia y Virgen del Pilar_ T_M_Marbella _Málaga__",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "36.923,55",
+        "fechaContrato": "Publicación PLACSP: Desistimiento:14/01/2022"
+    }
+,
+    {
+        "name": "OB 202/21",
+        "tipoContrato": "Obras",
+        "objContrato": "Contratación de las obras Pabellón Polideportivo en el Sector URP-SP-10_ San Pedro Alcántara_ T_M_ Marbella _Málaga_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "4.705.146,18",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:29/12/2021 Formalización:22/03/2022"
+    }
+,
+    {
+        "name": "D BPAT 8/21",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Enajenación de la vivienda letra A_ planta segunda_ edificio 1_ del Conjunto Residencial Jardines de Lunamar_ situado en C_ Pino Real 3_ Las Chapas_ anotada en el Inventario de Bienes Municipales con el nº 1_166_ naturaleza patrimonial-PMS_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "235.316,68",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:26/10/2021"
+    }
+,
+    {
+        "name": "CP 190/21",
+        "tipoContrato": "Privado",
+        "objContrato": "Patrocinio publicitario para la promoción del destino Marbella_ mediante la difusión de la imagen turística e institucional del Ayuntamiento de Marbella_ con motivo de la celebración del II Congreso SUTUS 2021 _Space and Underwater Tourism Universal Summit _",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "10.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:17/09/2021 Formalización:20/09/2021"
+    }
+,
+    {
         "name": "SE 87/21",
         "tipoContrato": "Servicios",
-        "objContrato": "Contratación del Servicio de Prevención y Control de la Legionella en las Instalaciones Municipales del Excmo. Ayuntamiento de Marbella",
+        "objContrato": "Contratación del Servicio de Prevención y Control de la Legionella en las Instalaciones Municipales del Excmo_ Ayuntamiento de Marbella",
         "estadoContrato": "Resuelta",
         "importeContrato": "165.289,26",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:23/11/2021\nFormalización:17/01/2022"
-    },
+        "fechaContrato": "Publicación PLACSP: Adjudicación:23/11/2021 Formalización:17/01/2022"
+    }
+,
     {
-        "name": "DSU 66/21 LOTES 2 Y 3",
+        "name": "BPAT 8/21",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Enajenación_ mediante procedimiento abierto_ subasta publica_ de la vivienda letra A_ planta segunda_ edificio 1_ del Conjunto Residencial Jardines de Lunamar_ situado en C_ Pino Real 3_ Las Chapas_ anotada en el Inventario de Bienes Municipales con el numero 1_166 naturaleza patrimonial-PMS",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "314.145,85",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:22/09/2021"
+    }
+,
+    {
+        "name": "SE 131/21",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de agencia de viajes para las Delegaciones de Turismo y Alcaldía del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "47.933,89",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:01/12/2021 Formalización:24/02/2022"
+    }
+,
+    {
+        "name": "OB 138/21",
+        "tipoContrato": "Obras",
+        "objContrato": "Contratación de la obra_ _Remodelación y mejora de infraestructuras en las calles Nuestra Señora de Gracia y Virgen del Pilar T_M_ de Marbella _Málaga__ incluido en la EDUSI Marbella_ modelo de ciudad sostenible_ cofinanciada en un 80_ por el fondo europeo de desarrollo regional _FEDER__ en el marco del programa operativo plurirregional de España _POPE_ 2014-2020”",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "2.543.074,50",
+        "fechaContrato": "Publicación PLACSP: Desistimiento:22/06/2021"
+    }
+,
+    {
+        "name": "SU 110/21",
         "tipoContrato": "Suministros",
-        "objContrato": "Suministro por lotes del vestuario para el Personal del Servicio de Prevención, Extinción de Incendios y Salvamentos del Excmo Ayuntamiento de Marbella",
+        "objContrato": "Contratación del suministro por cuenta abierta de material y productos de limpieza para las distintas dependencias municipales del Ayto_ de Marbella y centros escolares del termino municipal_ años 2021-2025_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "231.404,96",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:02/12/2021 Formalización:17/01/2022"
+    }
+,
+    {
+        "name": "DSE 47/21",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de tramitación de documentación de vehículos_embarcaciones de la flota municipal del Excmo_ Ayuntamiento de Marbella _2021-2024_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "10.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:04/08/2021 Formalización:22/09/2021"
+    }
+,
+    {
+        "name": "SU 70/21",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del suministro de vehículos ligeros_ por lotes para el servicio de prevención_ extinción de incendios y salvamentos del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "208.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:15/09/2021 Formalización:09/11/2021"
+    }
+,
+    {
+        "name": "SU 72/21",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del suministro de material de ferretería para los servicios operativos de la Delegación municipal de Trafico_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.998,99",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:27/07/2021 Formalización:20/09/2021"
+    }
+,
+    {
+        "name": "SU 66/21",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por lotes del vestuario para el Personal del Servicio de Prevención_ Extinción de Incendios y Salvamentos del Excmo Ayuntamiento de Marbella",
         "estadoContrato": "Resuelta",
         "importeContrato": "75.450,00",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:26/10/2021\nFormalización:02/11/2021"
-    },
+        "fechaContrato": "Publicación PLACSP: Adjudicación:22/07/2021 Formalización:20/09/2021"
+    }
+,
     {
-        "name": "OB 183/21",
-        "tipoContrato": "Obras",
-        "objContrato": "Contratación de la obra: Remodelación y Mejora de Infraestructuras en las calles Nuestra Señora de Gracia y Virgen del Pilar, T.M. Marbella, modelo de Ciudad Sostenible, cofinanciada en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER), en el Marco del Programa Operativo Plurirregionial de España (POPE) 2014-2020",
-        "estadoContrato": "Resuelta",
-        "importeContrato": "2.535.110,68",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:28/10/2021\nFormalización:01/12/2021"
-    },
-    {
-        "name": "SE 194/21",
-        "tipoContrato": "Servicios",
-        "objContrato": "Servicio de emergencia para el estudio del estado actual del estadio de futbol \" Antonio Lorenzo Cuevas\" de Marbella (Malaga)",
-        "estadoContrato": "Resuelta",
-        "importeContrato": "28.270,00",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:09/07/2021\nFormalización:09/07/2021"
-    },
-    {
-        "name": "SU 196/21",
+        "name": "SU 15/21",
         "tipoContrato": "Suministros",
-        "objContrato": "Suministro para la sustitución de la cámara frigorífica de frutas y verduras del Mercado Municipal Divina Pastora de Marbella.",
+        "objContrato": "Suministro diverso de cerrajería para los Servicios Operativos de San Pedro Alcantara_ durante los años 2021_2022_ 2023 y 2024 del Excmo_ Ayuntamiento de Marbella_",
         "estadoContrato": "Resuelta",
-        "importeContrato": "7.332,80",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:09/07/2021\nFormalización:09/07/2021"
-    },
+        "importeContrato": "8.264,46",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:10/05/2021 Formalización:09/06/2021"
+    }
+,
     {
-        "name": "OB 158/21",
-        "tipoContrato": "Obras",
-        "objContrato": "Contratación de la Redacción del Proyecto y la Ejecución de las obras \"Rehabilitación del Trapiche del Prado, antiguo complejo Preindustrial de la Caña de Azúcar, para Centro de Interpretación. T. M. Marbella (Málaga)\", incluido en el EDUSI Marbella, modelo de Ciudad Sostenible, cofinanciada en un 80% por el Fondo Europeo de desarrollo regional (FEDER), en el marco del programa operativo plurirregionial de España (POPE) 2014-2020",
-        "estadoContrato": "Resuelta",
-        "importeContrato": "3.210.961,98",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:28/10/2021\nFormalización:28/12/2021"
-    },
-    {
-        "name": "SU 157/21",
+        "name": "SU 41/21",
         "tipoContrato": "Suministros",
-        "objContrato": "Suministro por cuenta abierta de piezas, materiales, herramientas, lubricantes y fluidos de recambio para el Parque Móvil Municipal y Parque Móvil Policía Local y Seguridad Ciudadana del Excmo. Ayuntamiento de Marbella.",
+        "objContrato": "Alquiler de Stands y Elementos Auxiliares y que incluya el Transporte_ Montaje_ Desmontaje y solución de posibles incidencias para la Feria del Libro de Marbella_",
         "estadoContrato": "Resuelta",
-        "importeContrato": "247.933,89",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:18/11/2021\nFormalización:17/01/2022"
-    },
+        "importeContrato": "10.800,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:19/03/2021 Formalización:17/05/2021"
+    }
+,
     {
-        "name": "SE 188/21",
-        "tipoContrato": "Servicios",
-        "objContrato": "Servicio de instalación, mantenimiento, desmontaje, limpieza, almacenamiento y suministro de los equipamientos de playa de Marbella y San Pedro Alcántara.",
+        "name": "SU 280/20",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del Suministro en Régimen de Alquiler de la Exposición Cultura de Reyes de Marbella y San Pedro de Alcántara para la Navidad 2020_2021",
         "estadoContrato": "Resuelta",
-        "importeContrato": "398.869,89",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:01/07/2021\nFormalización:01/07/2021"
-    },
+        "importeContrato": "31.530,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:30/12/2020 Formalización:13/02/2021"
+    }
+,
     {
-        "name": "CP 179/21",
+        "name": "SU 5/21",
+        "tipoContrato": "Suministros",
+        "objContrato": "Bolsas de basura para la recogida de residuos de la Delegación de Limpieza del Excmo_ Ayuntamiento de Marbella para el ejercicio 2021_ con posibilidad de prorroga de cuatro años mas_ 2022_ 2023_ 2024 y 2025_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "57.851,24",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:08/04/2021 Formalización:07/06/2021"
+    }
+,
+    {
+        "name": "CP 251/20",
         "tipoContrato": "Privado",
-        "objContrato": "Patrocinio Publicitario para la promoción del destino Marbella mediante la difusión de la Imagen Turística e Institucional del Ayuntamiento de Marbella en el Festival Starlite Catalana Occidente que se celebrara en Marbella 2021",
+        "objContrato": "Patrocinio par la promoción de la ciudad mediante la difusión de la imagen del logo Marca _San Pedro Alcántara_ con la entidad Asociación Deportiva Juvenil San Pedro para las competiciones deportiva en las que participen todos sus equipos durante los años 2020-2024_",
         "estadoContrato": "Resuelta",
-        "importeContrato": "206.611,57",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:29/07/2021\nFormalización:04/08/2021"
-    },
+        "importeContrato": "106.060,60",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/12/2020 Formalización:28/12/2020"
+    }
+,
     {
-        "name": "OB 159/21",
-        "tipoContrato": "Obras",
-        "objContrato": "Contratación de la obra denominada: \"Tratamiento urbano del interior de la Glorieta de \"Pedro Gil\" en la intersección entre la Avda. Virgen del Rocio y la Avda. Norberto Goizueta Daz, San Pedro Alcantara, T.M. Marbella (Malaga) incluido en la EDUSI Marbella, modelo de ciudad sostenible, cofinanciada en un 80% por el fondo europeo de desarrollo regional (FEDER), en el marco del programa operativo plurirregional de España (POPE) 2014-2020",
+        "name": "SE 242/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Contratación del Servicio de Desbroce de Viales_ Conservación de Parcelas y Adecuación de Cauces Públicos",
         "estadoContrato": "Resuelta",
-        "importeContrato": "297.520,66",
-        "fechaContrato": "Publicación PLACSP:\nAdjudicación:26/10/2021\nFormalización:08/11/2021"
+        "importeContrato": "427.272,76",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:24/05/2021 Formalización:09/08/2021"
+    }
+,
+    {
+        "name": "SE 260/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de prevención y concienciación como medida de contingencia frente al coronavirus COVID-19",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "29.800,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:25/09/2020 Formalización:25/09/2020"
+    }
+,
+    {
+        "name": "SE 201/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Desinfección de los sistemas de climatización en los centros de trabajo municipales como medida de higiene para la prevención de la propagación del SARS-CoV-2",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "37.472,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:23/09/2020 Formalización:23/09/2020"
+    }
+,
+    {
+        "name": "DD BAT 7/20",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Enajenación_ mediante procedimiento abierto_ subasta pública_ de la vivienda nº 81 y el Garaje nº 64_ situados en el conjunta Residencial Birdie Club_ Urbanización Golf Rio Real_ Término Municipal de Marbella_ anotados en el Inventario de Bienes Municipales con los números 455 y 453 respectivamente_ con naturaleza Patrimonial-PMS_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "235.653,41",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:03/02/2021 Formalización:03/06/2021"
+    }
+,
+    {
+        "name": "SE 163/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Campaña de información a la ciudadanía como medida de contención del avance del virus COVID-19 y la atención de las necesidades de las familias mas vulnerables y población en general",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "60.893,60",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/09/2020 Formalización:21/09/2020"
+    }
+,
+    {
+        "name": "SU 215/20",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de desfribiladores externos automatizados _DEA__ así como su instalación y formación del personal en distintos Centros Deportivos Municipales del Excmo Ayuntamiento de Marbella",
+        "estadoContrato": "Evaluación",
+        "importeContrato": "18.842,97",
+        "fechaContrato": "Present. Oferta:11/09/2020"
+    }
+,
+    {
+        "name": "SU 231/20",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por cuenta abierta de material diverso de Construcción y material diverso de carpintería para los Servicios Operativos de San Pedro Alcántara_ durante los años 2020_ 2021_ 2022 y 2023_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "219.008,28",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:30/11/2020 Formalización:13/07/2021"
+    }
+,
+    {
+        "name": "SE 148/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de recuperación de pavimentación de viales del Término Municipal de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "96.300,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:10/12/2020 Formalización:23/03/2021"
+    }
+,
+    {
+        "name": "SU 158/20",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de Máscaras de Protección Respiratoria Tipo FFP2_ como medida de contención del avance del virus Covid-19 en el ámbitol laboral del Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "31.680,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:11/09/2020 Formalización:16/09/2020"
+    }
+,
+    {
+        "name": "OB 175/20",
+        "tipoContrato": "Obras",
+        "objContrato": "Contratación de las obras de Contención y Estabilización del Carril del General del T_ M_ Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "104.185,84",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:05/10/2020 Formalización:07/10/2020"
+    }
+,
+    {
+        "name": "SE 153/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicios de Catering para los Actos Protocolarios del Excmo Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "16.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:13/11/2020 Formalización:15/12/2020"
+    }
+,
+    {
+        "name": "CP 165/20",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación del Patrocinio Publicitario para la Promoción de la Ciudad de Marbella mediante la difusión de la imagen del logo marca _Marbella_ a través del Equipo Senior Masculino del Marbella Fútbol Club_ S_A_D_ en las competiciones Deportivas Oficiales en las que participe entre los años 2020-2023",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "268.595,04",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:17/06/2020 Formalización:22/06/2020"
+    }
+,
+    {
+        "name": "CAE 134/20",
+        "tipoContrato": "Administrativo especial",
+        "objContrato": "Contratación de la Explotación del Bar-Cafetería del Centro de Participación Activa para Personas Mayores de Nueva Andalucía",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "9.340,48",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:17/06/2020"
+    }
+,
+    {
+        "name": "CP 94/20",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación del Patrocinio Publicitario para la celebración en Marbella del Torneo de Tenis del circuito Atp Challenger Tour denominado _Marbella Tennis Open_ para el año 2020_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "20.661,15",
+        "fechaContrato": "Publicación PLACSP: Desistimiento:25/11/2020"
+    }
+,
+    {
+        "name": "SU 107/20",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro consistente en la adquisición de uniformes para el personal adscrito al servicio de notificadores del ayuntamiento de marbella durante los años 2020 y 2021_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "12.510,18",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:11/09/2020 Formalización:20/10/2020"
+    }
+,
+    {
+        "name": "OB 41/20",
+        "tipoContrato": "Obras",
+        "objContrato": "Sustitución del Cesped Artificial del Campo de Fútbol 7 del Polideportivo Juan Jose Almagro de San Pedro Alcántara_ T_ M_ Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "82.502,86",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/10/2020 Formalización:12/11/2020"
+    }
+,
+    {
+        "name": "CP 38/20",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación del Patrocinio Publicitario para la promoción de la Ciudad de Marbella mediante la difusión de la Imagen del Logo Marca _Marbella_ con el Equipo de Senior del Marbella Rugby Club",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "165.289,24",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/03/2020 Formalización:17/04/2020"
+    }
+,
+    {
+        "name": "D CP 60/20",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación de la Gestión_ Coordinación y Producción del Festival Marpoética 2020 de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "53.719,50",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:10/03/2020 Formalización:10/06/2020"
+    }
+,
+    {
+        "name": "SE 74/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de dirección facultativa de obras promovidas por el Excmo_ Ayuntamiento de Marbella_ Centro Polivalente Nueva Andalucía y Mejora Infraestructuras en Calle Postigos",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "58.181,52",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:04/03/2021 Formalización:15/10/2020"
+    }
+,
+    {
+        "name": "D SE 214/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Contratación del Servicio de Revisiones y_o Reparaciones de los Tacografos del Parque Móvil de la Delegación de Limpieza del Excmo_ Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "8.100,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:25/02/2020 Formalización:24/03/2020"
+    }
+,
+    {
+        "name": "D SE 282/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Contratación de espectáculos de animación de escenario_ pasacalles gran formato_ espectáculos de animación de escenario y pasacalles medio formato y pasacalle campamento _Ya llegan los Reyes_ en las fiestas de navidad y Reyes 2019_2020 en Marbella y San Pedro Alcántara",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.900,00",
+        "fechaContrato": "Publicación PLACSP: Desistimiento:12/02/2020"
+    }
+,
+    {
+        "name": "SU 279/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del suministro en régimen de alquiler del material necesario de estructura_ iluminación_ sonorización y otros elementos auxiliares para la realización de eventos con motivo de las Fiestas de Navidad y Reyes de Marbella 2019_2020",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "33.350,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:30/12/2019 Formalización:08/01/2020"
+    }
+,
+    {
+        "name": "SU 235/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del suministro de mantenimiento de la instalación de gas propano Palacio de Deportes _Elena Benitez_ del Excmo Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "23.713,80",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:04/02/2020"
+    }
+,
+    {
+        "name": "SU 220/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contrato de suministro por cuenta abierta de materiales y productos de limpieza para la Delegación de Limpieza del Excmo Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "27.537,48",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:05/03/2020 Formalización:05/05/2020"
+    }
+,
+    {
+        "name": "SE 1/20",
+        "tipoContrato": "Servicios",
+        "objContrato": "Contratación del Servicio de Conservación_ Mantenimiento y Suministro del Sistema Semafórico para la Regulación del Tráfico del T_ M_ Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "1.034.250,44",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:24/03/2020 Formalización:30/09/2020"
+    }
+,
+    {
+        "name": "SE 249/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Contratacion por lotes del Servicio para la organizacion y produccion de los eventos desarrollados con motivo de las Feria y Fiestas de San Pedro Alcantara 2019",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.910,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:13/12/2019 Formalización:12/02/2020"
+    }
+,
+    {
+        "name": "PAT 239/19",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Bases reguladoras de la concesión de las autorizaciones para la instalación y uso de la barra y puestos de comida y bebidas en la via pública con motivo de la celebración del festival Marbepop 2019",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "178,42",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:07/10/2019 Formalización:04/11/2019"
+    }
+,
+    {
+        "name": "SU 189/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de Productos Farmacéuticos y Material Sanitario al Laboratorio Municipal de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "6.609,92",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/11/2019 Formalización:20/11/2019"
+    }
+,
+    {
+        "name": "SE 165/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de Redacción de Proyectos de las Actuaciones 1_4_4_ 1_4_6_ 1_8_1_ 1_9_2 y 2_1_1 contempladas en el Plan Municipal de Aparcamientos de Marbella y San Pedro Alcántara",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "413.994,30",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/11/2019 Formalización:23/03/2020"
+    }
+,
+    {
+        "name": "SE 115/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de dirección de obras promovidas por el Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "93.585,05",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:08/11/2019 Formalización:04/02/2020"
+    }
+,
+    {
+        "name": "SU 184/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de los elementos necesarios para la iluminación_ sonorización y producción de las actuaciones artísticas locales y culturales para la feria y fiestas de San Bernabé 2019 organizados por la Delegación de Fiestas de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "56.626,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:07/06/2019 Formalización:03/03/2020"
+    }
+,
+    {
+        "name": "D SU 75/19 Lote 2",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del suministro de equipos de protección individual _EPI´S_ para el personal de distintos servicios del Excmo Ayuntamiento de Marbella",
+        "estadoContrato": "Parcialmente Resuelta",
+        "importeContrato": "479.338,84",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:23/09/2019 Formalización:24/01/2020"
+    }
+,
+    {
+        "name": "SU 122/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "suministro para la reparación_ adquisición y montaje de neumáticos_ equilibrados de ruedas y alineaciones de dirección para los diferentes vehículos adscritos al parque móvil municipal y paque móvil policía local y seguridad ciudadana del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "123.966,94",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:04/11/2019 Formalización:04/02/2020"
+    }
+,
+    {
+        "name": "D SU 54/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de material diverso de aluminio para la Delegación de Deportes",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "6.320,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/03/2020"
+    }
+,
+    {
+        "name": "SU 123/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de mobiliario de playas_ así como cartelería para su instalación en las distintas playas del T_M_ de Marbella y San Pedro Alcántara_",
+        "estadoContrato": "Parcialmente Resuelta",
+        "importeContrato": "198.280,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:01/10/2019 Formalización:04/02/2020"
+    }
+,
+    {
+        "name": "SE 49/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de Gestión del Servicio de Bomberos del Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "67.500,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:02/09/2019 Formalización:09/01/2020"
+    }
+,
+    {
+        "name": "SE 33/19",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de mantenimiento de las aplicaciones informáticas SicalWin 2006_ Firmadoc_ Portal_ GPA y ACCEDE Subvenciones para la gestión económica del Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "23.670,68",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:08/05/2019 Formalización:18/06/2019"
+    }
+,
+    {
+        "name": "CP 60/19",
+        "tipoContrato": "Privado",
+        "objContrato": "Servicio de Organización y Producción de las Actuaciones Artísticas que tendrán lugar con motivo del día de Andalucía 2019 en San Pedro Alcántara",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "55.390,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:25/02/2019 Formalización:07/06/2019"
+    }
+,
+    {
+        "name": "SU 27/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por cuenta abierta de material eléctrico para el Excmo_ Ayuntamiento de Marbella_ ejercicios 2019-2020",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "204.132,23",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:17/06/2019 Formalización:17/06/2019"
+    }
+,
+    {
+        "name": "SU 209/18",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro por lotes de diecinueve desfibriladores semiautomáticos externos con mantenimiento integral y control permanente así como la formación del personal_ para las instalaciones deportivas municipales para la Delegación de Deportes del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "47.500,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:11/03/2019 Formalización:22/03/2019"
+    }
+,
+    {
+        "name": "SU 20/19",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro para la realización de cursos artísticos de la Unidad de Arte y Cultura de San Pedro Alcántara",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "14.372,13",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/01/2019"
+    }
+,
+    {
+        "name": "SU 232/18 GENMAR 13522",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de 500 metros lineales de protectores para los muros perimetrales de los campos de fútbol Arroyo Primero y Luis Teruel Aguilar del T_ M_ Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.994,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:14/06/2019 Formalización:14/06/2019"
+    }
+,
+    {
+        "name": "SE 189/18 GENMAR 4121",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicios dirigidos a la compra de espacios publicitarios online para la difusión de campañas para promocionar la oferta turística del municipio de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.999,17",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:25/05/2020"
+    }
+,
+    {
+        "name": "SE 173/18 GENMAR 5012",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de alquiler y montaje de equipamientos de sonido y mobiliario_ servicio de ambulancia_ material publicitario y cartelería para el desarrollo de la Feria Social de Marbella para los años 2018 y 2019",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "28.700,00",
+        "fechaContrato": "Publicación PLACSP: Desistimiento:21/01/2019"
+    }
+,
+    {
+        "name": "OB 205/18 GENMAR 4777",
+        "tipoContrato": "Obras",
+        "objContrato": "Contratación de la Obra Jardines colgantes en pasos superiores y otras estructuras del viario público de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "123.966,94",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:05/07/2019 Formalización:05/07/2019"
+    }
+,
+    {
+        "name": "SU 115/18 GENMAR 3050",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de lotes de trofeos deportivos _placas y medallas de agradecimiento y premiación para la delegación de Deportes del Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "41.322,32",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:20/12/2018 Formalización:13/02/2019"
+    }
+,
+    {
+        "name": "SU 193/18 GENMAR 4308",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de material diverso de pintura para la Delegación de Deportes del Excmo_ Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "17.355,37",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:14/12/2018 Formalización:20/08/2019"
+    }
+,
+    {
+        "name": "SU 166/18 GENMAR 3994",
+        "tipoContrato": "Suministros",
+        "objContrato": "Contratación del suministro de seccionamiento de MT y entrega de abonado para el Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.958,68",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:02/11/2018 Formalización:20/08/2019"
+    }
+,
+    {
+        "name": "PAT 31/18",
+        "tipoContrato": "Patrimonial",
+        "objContrato": "Bases reguladoras de la autorización para la instalación y uso de barras de la feria y fiestas de san pedro alcántara 2018",
+        "estadoContrato": "Evaluación",
+        "importeContrato": "2.378,88",
+        "fechaContrato": "Present. Oferta:01/10/2018"
+    }
+,
+    {
+        "name": "CP 170/18 GENMAR 3879",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de actuación artística con motivo del festival carnavalero de verano 2018",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "2.892,56",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:03/10/2018"
+    }
+,
+    {
+        "name": "SE 125/18 GENMAR 2628",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de catering con motivo de la celebración del día de los Santos Patronos de la Policía Local_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "24.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:08/10/2018 Formalización:22/11/2018"
+    }
+,
+    {
+        "name": "SU 133/18 GENMAR 2481",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de material diverso de ferretería para la Delegación de Deportes del Excmo_ Ayuntamiento de Marbella durante los años 2018-2022",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "34.710,74",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:02/10/2018"
+    }
+,
+    {
+        "name": "SE 107/18 GENMAR 1838",
+        "tipoContrato": "Servicios",
+        "objContrato": "Adquisición de kits para análisis indiciarios y confirmatorios de drogas en saliva a conductores y otros usuarios y la contratación de un laboratorio externo para realizar las analíticas de confirmación en laboratorio para cinco tipos de drogas",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "52.600,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:19/11/2018 Formalización:18/01/2019"
+    }
+,
+    {
+        "name": "CP 77/18 GENMAR 1405",
+        "tipoContrato": "Privado",
+        "objContrato": "Contratación del montaje_ organización_ gestión y producción de las actuaciones artísticas que tendrán lugar con motivo de la Feria y Fiestas de San Bernabé 2018 en Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "178.574,89",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:04/06/2018 Formalización:13/09/2018"
+    }
+,
+    {
+        "name": "SE 44/18",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio de sanidad vegetal ejercicios 2018_ 2019 para el Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Adjudicada",
+        "importeContrato": "468.181,83",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:13/09/2018"
+    }
+,
+    {
+        "name": "SU 62/18",
+        "tipoContrato": "Suministros",
+        "objContrato": "Alquiler de Camiones con Plataforma Elevadora para la Unidad de Instalaciones de la Delegación de Obras e Infraestructuras del Excmo_ Ayuntamiento de Marbella para el año 2018",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "24.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:15/05/2018 Formalización:24/09/2018"
+    }
+,
+    {
+        "name": "SU 61/18",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de Cinta de Balizamiento para la Jefatura de Policía Local del Excmo_ Ayuntamiento de Marbella",
+        "estadoContrato": "Adjudicada",
+        "importeContrato": "18.000,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:28/06/2018"
+    }
+,
+    {
+        "name": "SU 46/18",
+        "tipoContrato": "Suministros",
+        "objContrato": "Adquisición de un camión con grúa y equipo portacontenedores para los servicios operativos de San Pedro Alcántara_ ejercicio 2018_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "206.610,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:10/05/2018 Formalización:27/07/2018"
+    }
+,
+    {
+        "name": "SE 114/17",
+        "tipoContrato": "Servicios",
+        "objContrato": "Dirección de la obra denominada Remodelación y Mejora de calle Pizarro y Aledaños en San Pedro Alcántara_ T_ M_ Marbella _Málaga_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "21.245,28",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:09/05/2018 Formalización:09/05/2018"
+    }
+,
+    {
+        "name": "SU 29/18",
+        "tipoContrato": "Suministros",
+        "objContrato": "Adquisición de 300 papeleras tipo Cibeles 120 litros o similar de color gris para la Delegación de Limpieza del Excmo_ Ayuntamiento de Marbella para el año 2018",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "95.041,32",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:18/05/2018 Formalización:21/05/2018"
+    }
+,
+    {
+        "name": "OB 127/17",
+        "tipoContrato": "Obras",
+        "objContrato": "Eficiencia energética en el alumbrado público de Calle Camilo José Cela_ Avda_ Arias Maldonado y Avda_ España_ Termino Municipal de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "189.180,25",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:21/06/2018 Formalización:17/09/2018"
+    }
+,
+    {
+        "name": "SU 145/17",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro e Instalación de equipamiento para sala de emergencias y control de Tráfico del Ayuntamiento de Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "305.785,12",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:25/10/2018 Formalización:21/01/2019"
+    }
+,
+    {
+        "name": "SU 22/18",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro para el alquiler y desmontaje de andamios para apuntalamiento del edificio nº 10 situado en Calle Hospital de Bazán_ T_M_ Marbella_ correspondiente al Decreto de Ejejución Subsidiaria 2016D00747 durante el año 2018",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "16.350,91",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:27/03/2018 Formalización:23/05/2018"
+    }
+,
+    {
+        "name": "SE 13/18",
+        "tipoContrato": "Servicios",
+        "objContrato": "Servicio consistente en el desarrollo de las actuaciones musicales que se realicen en los centros de participación para personas mayores de Marbella y San Pedro Alcántara_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "309.427,20",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:23/03/2018 Formalización:16/05/2018"
+    }
+,
+    {
+        "name": "SU 109/17",
+        "tipoContrato": "Suministros",
+        "objContrato": "Arrendamientos de 23 carrozas para las cabalgatas de reyes 2018 de Marbella_ San Pedro Alcántara_ Nueva Andalucía y Las Chapas y 4 carrozas y 10 bateas para los pasacalles de Carnaval 2018 para el Excmo_ Ayuntamiento de Marbella_",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "78.600,00",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:19/01/2018 Formalización:22/01/2018"
+    }
+,
+    {
+        "name": "OB 101/17",
+        "tipoContrato": "Obras",
+        "objContrato": "Actuaciones de Emergencia por las inundaciones del episodio meteorológico extremo de los días 3 y 4 de diciembre 2016 Demolición y Reconstrucción muros en patio en el Colegio Vicente Aleixandre Termino Municipal Marbella mediante ejecución subsidiaria",
+        "estadoContrato": "Adjudicada",
+        "importeContrato": "58.035,65",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:02/02/2018"
+    }
+,
+    {
+        "name": "OB 85/17",
+        "tipoContrato": "Obras",
+        "objContrato": "Obras de conexión peatonal provisional del Carril del Potril_ T_M_ Marbella",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "105.120,14",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:26/10/2017 Formalización:24/11/2017"
+    }
+,
+    {
+        "name": "SU 69/17",
+        "tipoContrato": "Suministros",
+        "objContrato": "Suministro de material de ferretería para el mantenimiento de instalaciones y edificios públicos_ durante los años 2017 al 2021",
+        "estadoContrato": "Resuelta",
+        "importeContrato": "99.173,82",
+        "fechaContrato": "Publicación PLACSP: Adjudicación:16/01/2018 Formalización:16/01/2018"
     }
 ]

@@ -49,10 +49,24 @@ Globalize.loadTimeZone(require('iana-tz-data'));
 
   // Click Licitaciones
   await page.waitForSelector(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]'
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepContratosMenores"]'
   )
   await page.click(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]'
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepContratosMenores"]'
+  )
+
+  await page.waitForSelector(
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]'
+  )
+  await page.click(
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]'
+  )
+  await page.evaluate(
+    (val) => (document.querySelector('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]').value = val),
+    '01-01-2010'
+  )
+  await page.click(
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:busReasProc18"]'
   )
 
   // Table Waite for Table
@@ -67,13 +81,12 @@ Globalize.loadTimeZone(require('iana-tz-data'));
         '#tableLicitacionesPerfilContratante tbody tr'
       )
       items.forEach((item) => {
-        const linkToContrato = (item.querySelector('td a'))
-        console.log(linkToContrato)
         results.push({
+          ...results,
           noExpediente: item.querySelector('td.tdExpediente').innerText,
           tipo: item.querySelector('td.tdTipoContrato').innerText,
           objetivo: item.querySelector('td.tdTipoContratoLicOC').innerText.replace(/[&/\\#,+()$~%.'":*?<>{}]/g, ''),
-          estado: item.querySelector('td.tdEstado').innerText,
+          estado: item.querySelector('td.tdEstado').innerText.replace(/[\n\r]/g, ' '),
           importe: item.querySelector('td.tdImporte').innerText,
           fecha: item.querySelector('td.tdFecha').innerText.replace(/[\n\r]/g, ' ')
         })
@@ -91,9 +104,9 @@ Globalize.loadTimeZone(require('iana-tz-data'));
         page.waitForNavigation({ waitUntil: 'load' })
       ])
     }
-    // const csvData = JSON.stringify(data)// data to add
-    // fs.appendFile('results4.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
-    console.log(data.length)
+    const csvData = JSON.stringify(data)// data to add
+    fs.appendFile('contratosMenores.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
+    console.log(csvData)
   } // end of while
 
   // console.log(isBtnDisabled, 'isBtnDisabled2')

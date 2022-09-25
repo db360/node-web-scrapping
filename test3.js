@@ -49,24 +49,10 @@ Globalize.loadTimeZone(require('iana-tz-data'));
 
   // Click Licitaciones
   await page.waitForSelector(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepContratosMenores"]'
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]'
   )
   await page.click(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepContratosMenores"]'
-  )
-
-  await page.waitForSelector(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]'
-  )
-  await page.click(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]'
-  )
-  await page.evaluate(
-    (val) => (document.querySelector('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]').value = val),
-    '01-01-2010'
-  )
-  await page.click(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:busReasProc18"]'
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]'
   )
 
   // Table Waite for Table
@@ -74,20 +60,22 @@ Globalize.loadTimeZone(require('iana-tz-data'));
   let isBtnDisabled = false
   while (!isBtnDisabled) {
     await page.waitForSelector('#tableLicitacionesPerfilContratante tbody')
-
     const data = await page.evaluate(() => {
       const results = []
+
       const items = document.querySelectorAll(
         '#tableLicitacionesPerfilContratante tbody tr'
       )
       items.forEach((item) => {
+        const linkToContrato = (item.querySelector('td a'))
+        console.log(linkToContrato)
         results.push({
           noExpediente: item.querySelector('td.tdExpediente').innerText,
           tipo: item.querySelector('td.tdTipoContrato').innerText,
           objetivo: item.querySelector('td.tdTipoContratoLicOC').innerText.replace(/[&/\\#,+()$~%.'":*?<>{}]/g, ''),
-          estado: item.querySelector('td.tdEstado').innerText.replace(/[\n\r]/g, ' '),
+          estado: item.querySelector('td.tdEstado').innerText,
           importe: item.querySelector('td.tdImporte').innerText,
-          adjudicatario: item.querySelector('td.tdFecha').innerText.replace(/[\n\r]/g, ' ')
+          fecha: item.querySelector('td.tdFecha').innerText.replace(/[\n\r]/g, ' ')
         })
       })
       return (results)
@@ -103,10 +91,9 @@ Globalize.loadTimeZone(require('iana-tz-data'));
         page.waitForNavigation({ waitUntil: 'load' })
       ])
     }
-    console.log(data)
     // const csvData = JSON.stringify(data)// data to add
-    // fs.appendFile('contratosMenores.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
-    // console.log(csvData)
+    // fs.appendFile('results4.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
+    console.log(data.length)
   } // end of while
 
   // console.log(isBtnDisabled, 'isBtnDisabled2')

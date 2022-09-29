@@ -69,99 +69,77 @@ const { default: tableParser } = require('puppeteer-table-parser');
         Importe: 'importe',
         Fechas: 'fechas'
       },
-      extraCols: [
-        {
-          colName: 'fechas2',
-          data: '',
-          position: 7
-        },
-        {
-          colName: 'adjudicacion',
-          data: '',
-          position: 8
-        },
-        {
-          colName: 'formalizacion',
-          data: '',
-          position: 9
-        },
-        {
-          colName: 'presoferta',
-          data: '',
-          position: 10
-        },
-        {
-          colName: 'desestimiento',
-          data: '',
-          position: 11
-        }
-      ],
+      // extraCols: [
+      //   {
+      //     colName: 'fechas2',
+      //     data: '',
+      //     position: 7
+      //   },
+      //   {
+      //     colName: 'fechas3',
+      //     data: '',
+      //     position: 8
+      //   },
+      //   {
+      //     colName: 'fechas4',
+      //     data: '',
+      //     position: 9
+      //   },
+      //   {
+      //     colName: 'fechas5',
+      //     data: '',
+      //     position: 10
+      //   }
+      //   {
+      //     colName: 'formalizacion',
+      //     data: '',
+      //     position: 9
+      //   },
+      //   {
+      //     colName: 'presoferta',
+      //     data: '',
+      //     position: 10
+      //   }
+      //   // {
+      //   //   colName: 'desestimiento',
+      //   //   data: '',
+      //   //   position: 11
+      //   // }
+      // ],
       rowTransform: (row, getColumnIndex) => {
         const fechas = getColumnIndex('fechas')
-        const fechas2 = getColumnIndex('fechas2')
-        const adjudicacion = getColumnIndex('adjudicacion')
-        const formalizacion = getColumnIndex('formalizacion')
-        const presoferta = getColumnIndex('presoferta')
-        const desestimiento = getColumnIndex('desestimiento')
-        const objcontrato = getColumnIndex('objcontrato')
+        // const fechas2 = getColumnIndex('fechas2')
+        // const fechas3 = getColumnIndex('fechas3')
+        // const fechas4 = getColumnIndex('fechas4')
+        // const fechas5 = getColumnIndex('fechas5')
+
         const importe = getColumnIndex('importe')
+
+        // const adjudicacion = getColumnIndex('adjudicacion')
+        // const formalizacion = getColumnIndex('formalizacion')
+        // const presoferta = getColumnIndex('presoferta')
+        // const desestimiento = getColumnIndex('desestimiento')
+        const objcontrato = getColumnIndex('objcontrato')
 
         // return row[fecha]
         row[objcontrato] = row[objcontrato].replace(/,/g, ';')
         row[importe] = row[importe].replace('.', '').replace('.', '').replace(',', '.')
-
-        if (row[fechas].length === 0) {
-          row[fechas] = 'Sin Fecha'
-        }
-
-        if (row[fechas].includes('Publicación PLACSP:')) {
-          row[fechas] = row[fechas].replace(/[\n\r]/g, ' ').replace('Publicación PLACSP:', '')
-          row[fechas2] = 'Publicación PLACSP'
-
-          // console.log('incluye publicación PLACSP')
-        } else {
-          row[fechas2] = 'No Publicada'
-        }
-        if (row[fechas].includes('Adjudicación:')) {
-          row[fechas] = row[fechas].replace(/[\n\r]/g, ' ').replace('Adjudicación:', '').trim()
-          row[adjudicacion] = 'Adjudicación:'
-          // console.log('incluye publicación PLACSP')
-        } else {
-          row[adjudicacion] = 'Sin Adjudicación'
-        }
-        if (row[fechas].includes('Formalización:')) {
-          row[fechas] = row[fechas].replace(/[\n\r]/g, ' ').replace('Formalización:', ';').replace(' ', '').replace(' ', '').trim()
-          row[formalizacion] = 'Formalización:'
-          // console.log('incluye publicación PLACSP')
-        } else {
-          row[formalizacion] = 'Sin Formalización'
-        }
-        if (row[fechas].includes('Present. Oferta:')) {
-          row[fechas] = row[fechas].replace(/[\n\r]/g, ' ').replace('Present. Oferta:', '').trim()
-          row[presoferta] = 'Fecha Pres. Oferta:'
-        } else {
-          row[presoferta] = 'Sin Fecha Present. Oferta'
-        }
-        if (row[fechas].includes('Desistimiento:')) {
-          row[fechas] = row[fechas].replace(/[\n\r]/g, ' ').replace('Desistimiento:', '').trim()
-          row[desestimiento] = 'Desestimada:'
-        } else {
-          row[desestimiento] = 'No Desestimada'
-        }
+        // console.log(row[fechas])
+        const fechasFormatted = row[fechas].replace(/ /g, '').trim()
+        row[fechas] = fechasFormatted
       }
     })
-    fs.appendFile('./nuevos_datos/licitaciones.csv', data, (err) => {
+    // console.log(data)
+    fs.appendFile('./nuevos_datos/licitaciones.csv', (data), (err) => {
       if (err) throw err
       console.log('The "data to append" was appended to file!')
     })
-    console.log(data)
     // const selector = '#tableLicitacionesPerfilContratante tbody tr'
     // const noExpediente = await page.evaluate(
     //   () => [...document.querySelectorAll(
     //     '#tableLicitacionesPerfilContratante > tbody > tr > td')]
     //     .map(elem => elem.innerText)
     // )
-
     const isDisabled =
       (await page.$(
         'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:ultimoLink"]'
@@ -176,6 +154,7 @@ const { default: tableParser } = require('puppeteer-table-parser');
         page.waitForNavigation({ waitUntil: 'load' })
       ])
     }
+
     // const csvData = JSON.stringify(data)// data to add
     // fs.appendFile('results4.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
     // console.log(data.length)

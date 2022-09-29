@@ -1,0 +1,10 @@
+
+estados: 
+	-Evaluación Previa -> nunca Fecha ''
+	-Publicada '' || 'Present. Oferta:28/09/2022'
+	-Evaluación 'Present. Oferta:26/05/2022' || 'Present. Solicitud:11/04/2022 Present. Oferta:11/04/2022'
+	-Anulada -> nunca fecha ''
+	-Resuelta 'Publicación PLACSP: Adjudicación:05/08/2022 Formalización:06/09/2022' || "Publicación PLACSP: Adjudicación:04/02/2020" || "Publicación PLACSP: Desistimiento:28/11/2019"
+	-Adjudicada 'Publicación PLACSP: Adjudicación:25/08/2022'
+	-Parcialmente Resuelta 'Publicación PLACSP: Adjudicación:03/06/2022' || 'Publicación PLACSP: Adjudicación:10/10/2019 Formalización:07/01/2020'
+	-Anuncio Previo ''

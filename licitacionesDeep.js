@@ -12,11 +12,15 @@ const fs = require('fs/promises');
   const page = await browser.newPage()
   await page.setViewport({ width: 1440, height: 1080 })
   await page.goto('https://contrataciondelestado.es/wps/portal/')
-  const cookies = await page.cookies()
-  await fs.writeFile('./cookies.json', JSON.stringify(cookies, null, 2))
-  const cookiesString = await fs.readFile('./cookies.json')
-  const parsedcookies = JSON.parse(cookiesString)
-  await page.setCookie(...parsedcookies)
+
+  async function setCookies () {
+    const cookies = await page.cookies()
+    await fs.writeFile('./cookies.json', JSON.stringify(cookies, null, 2))
+    const cookiesString = await fs.readFile('./cookies.json')
+    const parsedcookies = JSON.parse(cookiesString)
+    await page.setCookie(...parsedcookies)
+  }
+  setCookies()
   const url = 'https://contrataciondelestado.es/wps/portal/perfilContratante'
   // Pagina Perfil Contratante
   await page.goto(url, { waitUntil: 'load', timeout: 0, slowMo: 500 })
@@ -65,8 +69,18 @@ const fs = require('fs/promises');
       const isLinkExpediente = await row.$('td:nth-of-type(1) a') !== null
 
       if (isLinkExpediente) {
+        const expedienteLinkSelector = '#tableLicitacionesPerfilContratante tbody tr .tdExpediente a'
+        await page.waitForSelector(expedienteLinkSelector)
 
-        console.log('ok')
+        await page.evaluate(() => {
+          const xpath =
+            `//*[@id="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:texoEnlace_enlaceExpediente_${i - 1}"]`
+          const result = document.evaluate(xpath, document, null)
+          result.iterateNext().click()
+        })
+        // setTimeout(async () => {
+        //   await page.goBack()
+        // }, 500)
       } else {
         console.log('No link, pasar al singuiente')
       }

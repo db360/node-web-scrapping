@@ -22,7 +22,7 @@ const fs = require('fs/promises');
   await page.goto(url, { waitUntil: 'load', timeout: 0, slowMo: 500 })
   // await page.screenshot({ path: 'screenshot.png' })
   // Insertar Valor 'Marbella' y Click en buscar
-  const newInputValue = 'Marbella'
+  const newInputValue = 'Junta de Gobierno del Ayuntamiento de Marbella'
   // eslint-disable-next-line no-return-assign
   await page.evaluate(
     (val) => (document.querySelector('.width28punto6em').value = val),
@@ -36,7 +36,7 @@ const fs = require('fs/promises');
     result.iterateNext().click()
   })
   // Click en el boton de "Junta de Gobierno del Ayuntamiento de Marbella".
-  const contratosLinkSelector = 'table tbody tr:nth-child(2) a'
+  const contratosLinkSelector = 'table tbody tr:nth-child(1) a'
   await page.waitForSelector(contratosLinkSelector)
   await page.click(contratosLinkSelector)
 
@@ -62,41 +62,43 @@ const fs = require('fs/promises');
     for (let i = 0; i < rows.length; i++) {
       const row = rows[i]
 
-      const expediente = await row.$eval('td:nth-of-type(1)', element => element.innerText)
-      const tipo = await row.$eval('td:nth-of-type(2)', element => element.innerText)
-      const objetoContrato = await row.$eval('td:nth-of-type(3)', element => element.innerText.replace(/[&#,+()$~%.':*?<>{}]/g, ''))
-      const estado = await row.$eval('td:nth-of-type(4)', element => element.innerText.replace(/[\n\r]/g, ' '))
-      const importe = await row.$eval('td:nth-of-type(5)', element => element.innerText.replace('.', '').replace('.', '').replace(',', '.'))
-
-      const isFechas = await row.$('td.tdFecha div:nth-child(1)') !== null
-      // console.log(isFechas, 'FECHAS1')
-      const isFechas2 = await row.$('td.tdFecha div:nth-child(2)') !== null
-      // console.log(isFechas2, 'FECHAS2')
-      const isFechas3 = await row.$('td.tdFecha div:nth-child(3)') !== null
-      // console.log(isFechas3, 'FECHAS3')
-      const fechas1 = isFechas ? await row.$eval('td.tdFecha div:nth-child(1)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
-      const fechas2 = isFechas2 ? await row.$eval('td.tdFecha div:nth-child(2)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
-      const fechas3 = isFechas3 ? await row.$eval('td.tdFecha div:nth-child(3)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
-
       const isLinkExpediente = await row.$('td:nth-of-type(1) a') !== null
-      console.log(isLinkExpediente)
 
       if (isLinkExpediente) {
-        await page.waitForSelector('#tableLicitacionesPerfilContratante tbody tr .tdExpediente a')
-        await page.click(
-          '#tableLicitacionesPerfilContratante tbody tr .tdExpediente a'
-        )
+
+        console.log('ok')
+      } else {
+        console.log('No link, pasar al singuiente')
       }
 
-      // const linkExpediente = await row.$eval('td:nth-of-type(1) a', element => element.innerText)
+      // const expediente = await row.$eval('td:nth-of-type(1)', element => element.innerText)
+      // const tipo = await row.$eval('td:nth-of-type(2)', element => element.innerText)
+      // const objetoContrato = await row.$eval('td:nth-of-type(3)', element => element.innerText.replace(/[&#,+()$~%.':*?<>{}]/g, ''))
+      // const estado = await row.$eval('td:nth-of-type(4)', element => element.innerText.replace(/[\n\r]/g, ' '))
+      // const importe = await row.$eval('td:nth-of-type(5)', element => element.innerText.replace('.', '').replace('.', '').replace(',', '.'))
 
-      // console.log(fechas1, 'FEHCAS1')
-      console.log(expediente, tipo, objetoContrato, estado, importe, fechas1, fechas2, fechas3)
+      // const isFechas = await row.$('td.tdFecha div:nth-child(1)') !== null
+      // // console.log(isFechas, 'FECHAS1')
+      // const isFechas2 = await row.$('td.tdFecha div:nth-child(2)') !== null
+      // // console.log(isFechas2, 'FECHAS2')
+      // const isFechas3 = await row.$('td.tdFecha div:nth-child(3)') !== null
+      // // console.log(isFechas3, 'FECHAS3')
+      // const fechas1 = isFechas ? await row.$eval('td.tdFecha div:nth-child(1)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
+      // const fechas2 = isFechas2 ? await row.$eval('td.tdFecha div:nth-child(2)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
+      // const fechas3 = isFechas3 ? await row.$eval('td.tdFecha div:nth-child(3)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
 
-      // fs.appendFile('./nuevos_datos/nuevo.csv', `${expediente},${tipo},${objetoContrato},${estado},${importe},${fechas1},${fechas2},${fechas3},\n`, (err) => {
-      //   if (err) throw err
-      //   console.log('The "data to append" was appended to file!')
-      // })
+      // const isLinkExpediente = await row.$('td:nth-of-type(1) a') !== null
+      // console.log(isLinkExpediente)
+
+      // // const linkExpediente = await row.$eval('td:nth-of-type(1) a', element => element.innerText)
+
+      // // console.log(fechas1, 'FEHCAS1')
+      // console.log(expediente, tipo, objetoContrato, estado, importe, fechas1, fechas2, fechas3)
+
+    // fs.appendFile('./nuevos_datos/nuevo.csv', `${expediente},${tipo},${objetoContrato},${estado},${importe},${fechas1},${fechas2},${fechas3},\n`, (err) => {
+    //   if (err) throw err
+    //   console.log('The "data to append" was appended to file!')
+    // })
     }
 
     const isDisabled = (await page.$('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:ultimoLink"]')) === null
@@ -109,11 +111,11 @@ const fs = require('fs/promises');
         page.waitForNavigation({ waitUntil: 'load' })
       ])
     }
-    // const csvData = JSON.stringify(data)// data to add
-    // fs.appendFile('results4.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
+  // const csvData = JSON.stringify(data)// data to add
+  // fs.appendFile('results4.json', csvData.replace('][', ','), 'utf8', () => console.log('File Writed Successfully'))
   } // end of while
 
   // console.log(isBtnDisabled, 'isBtnDisabled2')
   console.log('PROCESO TERMINADO')
-  browser.close()
+  // browser.close()
 })()

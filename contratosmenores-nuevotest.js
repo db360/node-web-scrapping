@@ -40,15 +40,25 @@ const fs = require('fs/promises');
   await page.waitForSelector(contratosLinkSelector)
   await page.click(contratosLinkSelector)
 
-  /// Datos GENERALES DEL AYUNTAMIENTO:
-  // Form SELECTOR get data
-
-  // Click Licitaciones
   await page.waitForSelector(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]'
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepContratosMenores"]'
   )
   await page.click(
-    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepLic"]'
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:perfilComp:linkPrepContratosMenores"]'
+  )
+
+  await page.waitForSelector(
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]'
+  )
+  await page.click(
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]'
+  )
+  await page.evaluate(
+    (val) => (document.querySelector('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:textMinFecAnuncioMAQ2"]').value = val),
+    '01-01-2000'
+  )
+  await page.click(
+    'input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:busReasProc18"]'
   )
 
   // Table Waite for Table
@@ -65,38 +75,25 @@ const fs = require('fs/promises');
       const expediente = await row.$eval('td:nth-of-type(1)', element => element.innerText)
       const tipo = await row.$eval('td:nth-of-type(2)', element => element.innerText)
       const objetoContrato = await row.$eval('td:nth-of-type(3)', element => element.innerText.replace(/[&#,+()$~%.':*?<>{}]/g, ''))
-      const estado = await row.$eval('td:nth-of-type(4)', element => element.innerText.replace(/[\n\r]/g, ' '))
+      const fecha = await row.$eval('td:nth-of-type(4)', element => element.innerText.replace(/[\n\r]/g, ' '))
       const importe = await row.$eval('td:nth-of-type(5)', element => element.innerText.replace('.', '').replace('.', '').replace(',', '.'))
+      const adjudicatario = await row.$eval('td.tdFecha', element => element.innerText.replace(/[\n]/g, ' ').replace(/[,]/g, ';'))
 
       const isFechas = await row.$('td.tdFecha div:nth-child(1)') !== null
-      // console.log(isFechas, 'FECHAS1')
+      console.log(isFechas, 'FECHAS1')
       const isFechas2 = await row.$('td.tdFecha div:nth-child(2)') !== null
-      // console.log(isFechas2, 'FECHAS2')
+      console.log(isFechas2, 'FECHAS2')
       const isFechas3 = await row.$('td.tdFecha div:nth-child(3)') !== null
-      // console.log(isFechas3, 'FECHAS3')
-      const fechas1 = isFechas ? await row.$eval('td.tdFecha div:nth-child(1)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
-      const fechas2 = isFechas2 ? await row.$eval('td.tdFecha div:nth-child(2)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
-      const fechas3 = isFechas3 ? await row.$eval('td.tdFecha div:nth-child(3)', element => element.innerText.replace(/[\n]/g, ' ')) : 'SIN FECHA'
+      console.log(isFechas3, 'FECHAS3')
 
-      const isLinkExpediente = await row.$('td:nth-of-type(1) a') !== null
-      console.log(isLinkExpediente)
-
-      if (isLinkExpediente) {
-        await page.waitForSelector('#tableLicitacionesPerfilContratante tbody tr .tdExpediente a')
-        await page.click(
-          '#tableLicitacionesPerfilContratante tbody tr .tdExpediente a'
-        )
-      }
-
-      // const linkExpediente = await row.$eval('td:nth-of-type(1) a', element => element.innerText)
-
-      // console.log(fechas1, 'FEHCAS1')
-      console.log(expediente, tipo, objetoContrato, estado, importe, fechas1, fechas2, fechas3)
-
-      // fs.appendFile('./nuevos_datos/nuevo.csv', `${expediente},${tipo},${objetoContrato},${estado},${importe},${fechas1},${fechas2},${fechas3},\n`, (err) => {
-      //   if (err) throw err
-      //   console.log('The "data to append" was appended to file!')
-      // })
+      // const fechas2 = await row.$eval('td.tdFecha div:nth-child(2) span', element => element.innerText.replace(/[\n]/g, ' '))
+      // const fechas3 = await row.$eval('td.tdFecha div:nth-child(3) span', element => element.innerText.replace(/[\n]/g, ' '))
+      console.log(adjudicatario, 'FEHCAS1')
+      // console.log(expediente, tipo, objetoContrato, estado, importe, fechas)
+      fs.appendFile('./nuevos_datos/nuevocontratosmenores.csv', `${expediente},${tipo},${objetoContrato},${fecha},${importe},${adjudicatario},\n`, (err) => {
+        if (err) throw err
+        console.log('The "data to append" was appended to file!')
+      })
     }
 
     const isDisabled = (await page.$('input[name="viewns_Z7_AVEQAI930GRPE02BR764FO30G0_:form1:ultimoLink"]')) === null

@@ -1,11 +1,14 @@
-const puppeteer = require('puppeteer')
-const fs = require('fs/promises');
+const puppeteer = require('puppeteer-extra')
+const fs = require('fs/promises')
 // const tabletojson = require('tabletojson').Tabletojson
 // const moment = require('moment')
 // const { default: tableParser } = require('puppeteer-table-parser');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+puppeteer.use(StealthPlugin());
 
 (async () => {
   const browser = await puppeteer.launch({
+    devtools: true,
     headless: false,
     userDataDir: './tmp'
   })
@@ -78,11 +81,15 @@ const fs = require('fs/promises');
           const result = document.evaluate(xpath, document, null)
           result.iterateNext().click()
         })
+
+        const infoExpediente = await page.$$('#tableLicitacionesPerfilContratante tbody tr')
+        const id = await row.$eval('td:nth-of-type(1)', element => element.innerText)
+
         // setTimeout(async () => {
         //   await page.goBack()
         // }, 500)
       } else {
-        console.log('No link, pasar al singuiente')
+        console.log('No link, pasar al siguiente')
       }
 
       // const expediente = await row.$eval('td:nth-of-type(1)', element => element.innerText)
